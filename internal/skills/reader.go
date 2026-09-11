@@ -193,6 +193,7 @@ func (r *Reader) scan() ([]SkillCard, error) {
 	r.mu.Unlock()
 
 	seen := make(map[string]bool)
+	seenNames := make(map[string]bool)
 	var cards []SkillCard
 	for _, dir := range r.dirs {
 		if dir == "" {
@@ -232,6 +233,11 @@ func (r *Reader) scan() ([]SkillCard, error) {
 			if name == "" {
 				name = filepath.Base(filepath.Dir(p))
 			}
+			// Resolve directory priority before sorting or model visibility filtering.
+			if seenNames[name] {
+				continue
+			}
+			seenNames[name] = true
 			cards = append(cards, SkillCard{
 				Name:                   name,
 				Description:            fm.Description,
