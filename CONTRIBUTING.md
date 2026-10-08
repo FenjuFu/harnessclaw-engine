@@ -45,6 +45,11 @@ go test -tags=integration ./internal/provider/bifrost/ -v
 
 A coverage report is available via `make test-cover`, which writes `coverage.html`.
 
+**Testing policy:** new functionality and bug fixes must come with automated
+tests. Add unit tests next to the code you change, and add a regression test for
+every bug fix whenever practical. CI runs `go build`, `go vet` and
+`go test -race` on every pull request.
+
 ## Architecture constraints
 
 Dependencies flow in one direction:
