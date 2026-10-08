@@ -6,11 +6,10 @@
 
 Report privately through [GitHub private vulnerability reporting](https://github.com/harnessclaw/harnessclaw-engine/security/advisories/new). Please include the affected version or commit, a description of the impact, and steps to reproduce.
 
-## What to Expect
+## Following Up
 
-- We acknowledge new reports within 48 hours and send an initial assessment within 14 days.
-- We keep you informed while we work on a fix and coordinate the disclosure date with you.
-- Fixes ship in a new release and are published as a [GitHub Security Advisory](https://github.com/harnessclaw/harnessclaw-engine/security/advisories).
+Use the same private advisory thread for additional information and questions.
+Please coordinate public disclosure with the maintainers through that thread.
 
 ## Supported Versions
 

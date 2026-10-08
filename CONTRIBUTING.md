@@ -105,6 +105,9 @@ follows [Keep a Changelog](https://keepachangelog.com/) and is written in Englis
 
 ## Reporting bugs and asking questions
 
+For security vulnerabilities, follow the private reporting instructions in
+[SECURITY.md](SECURITY.md).
+
 - 🐛 [Issues](https://github.com/harnessclaw/harnessclaw-engine/issues) - bugs and feature requests
 - 💬 [Discussions](https://github.com/harnessclaw/harnessclaw-engine/discussions) - questions and ideas
 - 👾 [Discord](https://discord.gg/SeseGE7ZUH)
